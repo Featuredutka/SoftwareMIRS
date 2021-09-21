@@ -6,18 +6,14 @@
 
 #include <bur/plctypes.h>
 
-
-
-
 __asm__(".section \".plc\"");
 
 /* Used IEC files */
-__asm__(".ascii \"iecfile \\\"Logical/Program/Types.typ\\\" scope \\\"local\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Program/Types.typ\\\" scope "
+        "\\\"local\\\"\\n\"");
 
 /* Exported library functions and function blocks */
 
 __asm__(".previous");
 
-
 #endif /* _BUR_1632179377_3_ */
-

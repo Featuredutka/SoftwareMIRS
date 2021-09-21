@@ -5,7 +5,4 @@
 #include <AsDefault.h>
 #endif
 
-void _EXIT ProgramExit(void)
-{
-
-}
+void _EXIT ProgramExit(void) {}

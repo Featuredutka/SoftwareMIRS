@@ -6,19 +6,13 @@
 extern "C" {
 #endif
 
-
 #include <bur/plc.h>
-
-
 
 /* Constants */
 
-
 /* Datatypes */
 
-
 /* Datatypes of function blocks */
-
 
 /* Prototyping of functions and function blocks */
 signed short H_TO_NINT(signed short IN);
@@ -41,9 +35,7 @@ signed long swapDINT(signed long IN);
 unsigned long swapUDINT(unsigned long IN);
 float swapREAL(float IN);
 
-
 #ifdef __cplusplus
 };
 #endif
 #endif /* ASIECCON_H_ */
-

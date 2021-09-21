@@ -1,17 +1,16 @@
 #ifndef _DEFAULT_757602046
 #define _DEFAULT_757602046
-#include <bur/plctypes.h>
 #include <bur/plc.h>
+#include <bur/plctypes.h>
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
-#include <operator.h>
-#include <runtime.h>
-#include <astime.h>
 #include <AsIecCon.h>
 #include <MotorCtrl.h>
+#include <astime.h>
+#include <operator.h>
+#include <runtime.h>
 #ifdef __cplusplus
 };
 #endif

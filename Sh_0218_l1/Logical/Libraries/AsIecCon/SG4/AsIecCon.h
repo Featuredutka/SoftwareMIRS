@@ -4,8 +4,7 @@
 #ifndef _ASIECCON_
 #define _ASIECCON_
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 #include <bur/plctypes.h>
@@ -13,8 +12,6 @@ extern "C"
 #ifndef _BUR_PUBLIC
 #define _BUR_PUBLIC
 #endif
-
-
 
 /* Prototyping of functions and function blocks */
 _BUR_PUBLIC signed short H_TO_NINT(signed short IN);
@@ -58,4 +55,3 @@ _BUR_PUBLIC double swapLREAL(double IN);
 };
 #endif
 #endif /* _ASIECCON_ */
-

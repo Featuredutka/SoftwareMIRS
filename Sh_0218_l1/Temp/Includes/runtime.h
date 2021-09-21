@@ -4,8 +4,7 @@
 #ifndef _RUNTIME_
 #define _RUNTIME_
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 #include <bur/plctypes.h>
@@ -75,398 +74,387 @@ _GLOBAL_CONST unsigned short ERR_NOTIMPLEMENTED;
 _GLOBAL_CONST unsigned short ERR_OK;
 #endif
 
-
-
-
 /* Datatypes and datatypes of function blocks */
-typedef struct SFCActionControl
-{
-    /* VAR_INPUT (analog) */
-    plctime T;
-    /* VAR (analog) */
-    unsigned char S_FF_SET;
-    unsigned char S_FF_R1;
-    unsigned char S_FF_Q;
-    unsigned char dummy1;
-    plctime L_TMR_PT;
-    plctime L_TMR_ET;
-    plctime L_TMR_STAR;
-    unsigned char L_TMR_IN;
-    unsigned char L_TMR_Q;
-    unsigned char L_TMR_M;
-    unsigned char dummy2;
-    plctime D_TMR_PT;
-    plctime D_TMR_ET;
-    plctime D_TMR_STAR;
-    unsigned char D_TMR_IN;
-    unsigned char D_TMR_Q;
-    unsigned char D_TMR_M;
-    unsigned char dummy3;
-    unsigned char P_TRIG_CLK;
-    unsigned char P_TRIG_Q;
-    unsigned char P_TRIG_M;
-    unsigned char dummy4;
-    plctime SD_TMR_PT;
-    plctime SD_TMR_ET;
-    plctime SD_TMR_STA;
-    unsigned char SD_TMR_IN;
-    unsigned char SD_TMR_Q;
-    unsigned char SD_TMR_M;
-    unsigned char dummy5;
-    unsigned char SD_FF_SET;
-    unsigned char SD_FF_R1;
-    unsigned char SD_FF_Q;
-    unsigned char DS_FF_SET;
-    unsigned char DS_FF_R1;
-    unsigned char DS_FF_Q;
-    plctime DS_TMR_PT;
-    plctime DS_TMR_ET;
-    plctime DS_TMR_STA;
-    unsigned char DS_TMR_IN;
-    unsigned char DS_TMR_Q;
-    unsigned char DS_TMR_M;
-    unsigned char dummy6;
-    unsigned char SL_FF_SET;
-    unsigned char SL_FF_R1;
-    unsigned char SL_FF_Q;
-    unsigned char dummy7;
-    plctime SL_TMR_PT;
-    plctime SL_TMR_ET;
-    plctime SL_TMR_STA;
-    unsigned char SL_TMR_IN;
-    unsigned char SL_TMR_Q;
-    unsigned char SL_TMR_M;
-    unsigned char dummy8;
-    /* VAR_INPUT (digital) */
-    plcbit N;
-    plcbit R0;
-    plcbit S0;
-    plcbit L;
-    plcbit D;
-    plcbit P;
-    plcbit SD;
-    plcbit DS;
-    plcbit SL;
-    /* VAR_OUTPUT (digital) */
-    plcbit Q;
+typedef struct SFCActionControl {
+  /* VAR_INPUT (analog) */
+  plctime T;
+  /* VAR (analog) */
+  unsigned char S_FF_SET;
+  unsigned char S_FF_R1;
+  unsigned char S_FF_Q;
+  unsigned char dummy1;
+  plctime L_TMR_PT;
+  plctime L_TMR_ET;
+  plctime L_TMR_STAR;
+  unsigned char L_TMR_IN;
+  unsigned char L_TMR_Q;
+  unsigned char L_TMR_M;
+  unsigned char dummy2;
+  plctime D_TMR_PT;
+  plctime D_TMR_ET;
+  plctime D_TMR_STAR;
+  unsigned char D_TMR_IN;
+  unsigned char D_TMR_Q;
+  unsigned char D_TMR_M;
+  unsigned char dummy3;
+  unsigned char P_TRIG_CLK;
+  unsigned char P_TRIG_Q;
+  unsigned char P_TRIG_M;
+  unsigned char dummy4;
+  plctime SD_TMR_PT;
+  plctime SD_TMR_ET;
+  plctime SD_TMR_STA;
+  unsigned char SD_TMR_IN;
+  unsigned char SD_TMR_Q;
+  unsigned char SD_TMR_M;
+  unsigned char dummy5;
+  unsigned char SD_FF_SET;
+  unsigned char SD_FF_R1;
+  unsigned char SD_FF_Q;
+  unsigned char DS_FF_SET;
+  unsigned char DS_FF_R1;
+  unsigned char DS_FF_Q;
+  plctime DS_TMR_PT;
+  plctime DS_TMR_ET;
+  plctime DS_TMR_STA;
+  unsigned char DS_TMR_IN;
+  unsigned char DS_TMR_Q;
+  unsigned char DS_TMR_M;
+  unsigned char dummy6;
+  unsigned char SL_FF_SET;
+  unsigned char SL_FF_R1;
+  unsigned char SL_FF_Q;
+  unsigned char dummy7;
+  plctime SL_TMR_PT;
+  plctime SL_TMR_ET;
+  plctime SL_TMR_STA;
+  unsigned char SL_TMR_IN;
+  unsigned char SL_TMR_Q;
+  unsigned char SL_TMR_M;
+  unsigned char dummy8;
+  /* VAR_INPUT (digital) */
+  plcbit N;
+  plcbit R0;
+  plcbit S0;
+  plcbit L;
+  plcbit D;
+  plcbit P;
+  plcbit SD;
+  plcbit DS;
+  plcbit SL;
+  /* VAR_OUTPUT (digital) */
+  plcbit Q;
 } SFCActionControl_typ;
 
-typedef struct SFCActionType
-{   plcbit x;
-    plcbit _x;
-    plctime t;
-    plctime _t;
-    struct SFCActionControl AC;
+typedef struct SFCActionType {
+  plcbit x;
+  plcbit _x;
+  plctime t;
+  plctime _t;
+  struct SFCActionControl AC;
 } SFCActionType;
 
-typedef struct SFCAC2
-{
-    /* VAR_INPUT (analog) */
-    plctime T;
-    /* VAR (analog) */
-    unsigned char S_FF_SET;
-    unsigned char S_FF_R1;
-    unsigned char S_FF_Q;
-    plctime L_TMR_PT;
-    plctime L_TMR_ET;
-    plctime L_TMR_STAR;
-    unsigned char L_TMR_IN;
-    unsigned char L_TMR_Q;
-    unsigned char L_TMR_M;
-    plctime D_TMR_PT;
-    plctime D_TMR_ET;
-    plctime D_TMR_STAR;
-    unsigned char D_TMR_IN;
-    unsigned char D_TMR_Q;
-    unsigned char D_TMR_M;
-    plctime SD_TMR_PT;
-    plctime SD_TMR_ET;
-    plctime SD_TMR_STA;
-    unsigned char SD_TMR_IN;
-    unsigned char SD_TMR_Q;
-    unsigned char SD_TMR_M;
-    unsigned char SD_FF_SET;
-    unsigned char SD_FF_R1;
-    unsigned char SD_FF_Q1;
-    unsigned char DS_FF_SET;
-    unsigned char DS_FF_R1;
-    unsigned char DS_FF_Q1;
-    plctime DS_TMR_PT;
-    plctime DS_TMR_ET;
-    plctime DS_TMR_STA;
-    unsigned char DS_TMR_IN;
-    unsigned char DS_TMR_Q;
-    unsigned char DS_TMR_M;
-    unsigned char SL_FF_SET;
-    unsigned char SL_FF_R1;
-    unsigned char SL_FF_Q;
-    plctime SL_TMR_PT;
-    plctime SL_TMR_ET;
-    plctime SL_TMR_STA;
-    unsigned char SL_TMR_IN;
-    unsigned char SL_TMR_Q;
-    unsigned char SL_TMR_M;
-    unsigned char P_TRIG_Q;
-    unsigned char P_TRIG_M;
-    unsigned char Q_TRIG_Q;
-    unsigned char Q_TRIG_M;
-    unsigned char P1_TRIG_Q;
-    unsigned char P1_TRIG_M;
-    unsigned char P0_TRIG_Q;
-    unsigned char P0_TRIG_M;
-    /* VAR_INPUT (digital) */
-    plcbit N;
-    plcbit R0;
-    plcbit S0;
-    plcbit L;
-    plcbit D;
-    plcbit P;
-    plcbit P1;
-    plcbit P0;
-    plcbit SD;
-    plcbit DS;
-    plcbit SL;
-    /* VAR_OUTPUT (digital) */
-    plcbit Q;
-    plcbit A;
+typedef struct SFCAC2 {
+  /* VAR_INPUT (analog) */
+  plctime T;
+  /* VAR (analog) */
+  unsigned char S_FF_SET;
+  unsigned char S_FF_R1;
+  unsigned char S_FF_Q;
+  plctime L_TMR_PT;
+  plctime L_TMR_ET;
+  plctime L_TMR_STAR;
+  unsigned char L_TMR_IN;
+  unsigned char L_TMR_Q;
+  unsigned char L_TMR_M;
+  plctime D_TMR_PT;
+  plctime D_TMR_ET;
+  plctime D_TMR_STAR;
+  unsigned char D_TMR_IN;
+  unsigned char D_TMR_Q;
+  unsigned char D_TMR_M;
+  plctime SD_TMR_PT;
+  plctime SD_TMR_ET;
+  plctime SD_TMR_STA;
+  unsigned char SD_TMR_IN;
+  unsigned char SD_TMR_Q;
+  unsigned char SD_TMR_M;
+  unsigned char SD_FF_SET;
+  unsigned char SD_FF_R1;
+  unsigned char SD_FF_Q1;
+  unsigned char DS_FF_SET;
+  unsigned char DS_FF_R1;
+  unsigned char DS_FF_Q1;
+  plctime DS_TMR_PT;
+  plctime DS_TMR_ET;
+  plctime DS_TMR_STA;
+  unsigned char DS_TMR_IN;
+  unsigned char DS_TMR_Q;
+  unsigned char DS_TMR_M;
+  unsigned char SL_FF_SET;
+  unsigned char SL_FF_R1;
+  unsigned char SL_FF_Q;
+  plctime SL_TMR_PT;
+  plctime SL_TMR_ET;
+  plctime SL_TMR_STA;
+  unsigned char SL_TMR_IN;
+  unsigned char SL_TMR_Q;
+  unsigned char SL_TMR_M;
+  unsigned char P_TRIG_Q;
+  unsigned char P_TRIG_M;
+  unsigned char Q_TRIG_Q;
+  unsigned char Q_TRIG_M;
+  unsigned char P1_TRIG_Q;
+  unsigned char P1_TRIG_M;
+  unsigned char P0_TRIG_Q;
+  unsigned char P0_TRIG_M;
+  /* VAR_INPUT (digital) */
+  plcbit N;
+  plcbit R0;
+  plcbit S0;
+  plcbit L;
+  plcbit D;
+  plcbit P;
+  plcbit P1;
+  plcbit P0;
+  plcbit SD;
+  plcbit DS;
+  plcbit SL;
+  /* VAR_OUTPUT (digital) */
+  plcbit Q;
+  plcbit A;
 } SFCAC2_typ;
 
-typedef struct SFCActionType2
-{   plcbit x;
-    plcbit _x;
-    struct SFCAC2 AC;
+typedef struct SFCActionType2 {
+  plcbit x;
+  plcbit _x;
+  struct SFCAC2 AC;
 } SFCActionType2;
 
-typedef struct SFCActionCType
-{   plcbit x;
-    plcbit _x;
-    plcbit force;
-    plcbit _force;
-    plcbit active;
-    plcbit _active;
-    plcbit error;
-    struct SFCActionControl AC;
+typedef struct SFCActionCType {
+  plcbit x;
+  plcbit _x;
+  plcbit force;
+  plcbit _force;
+  plcbit active;
+  plcbit _active;
+  plcbit error;
+  struct SFCActionControl AC;
 } SFCActionCType;
 
-typedef struct SFCActionCType2
-{   plcbit x;
-    plcbit _x;
-    plcbit force;
-    plcbit _force;
-    plcbit active;
-    plcbit _active;
-    plcbit error;
-    struct SFCAC2 AC;
+typedef struct SFCActionCType2 {
+  plcbit x;
+  plcbit _x;
+  plcbit force;
+  plcbit _force;
+  plcbit active;
+  plcbit _active;
+  plcbit error;
+  struct SFCAC2 AC;
 } SFCActionCType2;
 
-typedef struct TimerType
-{   double ptime;
-    double etime;
-    double start;
-    unsigned char in;
-    unsigned char q;
+typedef struct TimerType {
+  double ptime;
+  double etime;
+  double start;
+  unsigned char in;
+  unsigned char q;
 } TimerType;
 
-typedef struct SFCAC3
-{
-    /* VAR_INPUT (analog) */
-    double T;
-    double T_ACT;
-    /* VAR (analog) */
-    struct TimerType L_TMR;
-    struct TimerType D_TMR;
-    struct TimerType SD_TMR;
-    struct TimerType DS_TMR;
-    struct TimerType SL_TMR;
-    unsigned char S_FF_Q1;
-    unsigned char SD_FF_Q1;
-    unsigned char DS_FF_Q1;
-    unsigned char SL_FF_Q1;
-    unsigned char P_R_TRIG_Q;
-    unsigned char P_R_TRIG_M;
-    unsigned char Q_F_TRIG_Q;
-    unsigned char Q_F_TRIG_M;
-    unsigned char P1_R_TRIG_Q;
-    unsigned char P1_R_TRIG_M;
-    unsigned char P0_F_TRIG_Q;
-    unsigned char P0_F_TRIG_M;
-    /* VAR_INPUT (digital) */
-    plcbit N;
-    plcbit R0;
-    plcbit S0;
-    plcbit L;
-    plcbit D;
-    plcbit P;
-    plcbit P1;
-    plcbit P0;
-    plcbit SD;
-    plcbit DS;
-    plcbit SL;
-    plcbit PAUSE;
-    /* VAR_OUTPUT (digital) */
-    plcbit Q;
-    plcbit A;
+typedef struct SFCAC3 {
+  /* VAR_INPUT (analog) */
+  double T;
+  double T_ACT;
+  /* VAR (analog) */
+  struct TimerType L_TMR;
+  struct TimerType D_TMR;
+  struct TimerType SD_TMR;
+  struct TimerType DS_TMR;
+  struct TimerType SL_TMR;
+  unsigned char S_FF_Q1;
+  unsigned char SD_FF_Q1;
+  unsigned char DS_FF_Q1;
+  unsigned char SL_FF_Q1;
+  unsigned char P_R_TRIG_Q;
+  unsigned char P_R_TRIG_M;
+  unsigned char Q_F_TRIG_Q;
+  unsigned char Q_F_TRIG_M;
+  unsigned char P1_R_TRIG_Q;
+  unsigned char P1_R_TRIG_M;
+  unsigned char P0_F_TRIG_Q;
+  unsigned char P0_F_TRIG_M;
+  /* VAR_INPUT (digital) */
+  plcbit N;
+  plcbit R0;
+  plcbit S0;
+  plcbit L;
+  plcbit D;
+  plcbit P;
+  plcbit P1;
+  plcbit P0;
+  plcbit SD;
+  plcbit DS;
+  plcbit SL;
+  plcbit PAUSE;
+  /* VAR_OUTPUT (digital) */
+  plcbit Q;
+  plcbit A;
 } SFCAC3_typ;
 
-typedef struct SFCActionCType3
-{   double t;
-    double _t;
-    double tp;
-    plcbit x;
-    plcbit _x;
-    plcbit force;
-    plcbit _force;
-    plcbit active;
-    plcbit _active;
-    plcbit error;
-    struct SFCAC3 AC;
+typedef struct SFCActionCType3 {
+  double t;
+  double _t;
+  double tp;
+  plcbit x;
+  plcbit _x;
+  plcbit force;
+  plcbit _force;
+  plcbit active;
+  plcbit _active;
+  plcbit error;
+  struct SFCAC3 AC;
 } SFCActionCType3;
 
-typedef struct SFCStepType
-{   plcbit x;
-    plctime t;
-    plcbit _x;
-    plctime _t;
+typedef struct SFCStepType {
+  plcbit x;
+  plctime t;
+  plcbit _x;
+  plctime _t;
 } SFCStepType;
 
-typedef struct SFCStepCType
-{   plctime t;
-    plctime _t;
-    unsigned long inactive_actions;
-    unsigned long _inactive_actions;
-    unsigned long error_actions;
-    plcbit x;
-    plcbit _x;
-    plcbit x_activate;
-    plcbit force;
-    plcbit _force;
-    plcbit active;
-    plcbit _active;
-    plcbit error;
-    plcbit tip;
-    plcbit tip_disable_duration;
-    plcbit tip_disable_action;
+typedef struct SFCStepCType {
+  plctime t;
+  plctime _t;
+  unsigned long inactive_actions;
+  unsigned long _inactive_actions;
+  unsigned long error_actions;
+  plcbit x;
+  plcbit _x;
+  plcbit x_activate;
+  plcbit force;
+  plcbit _force;
+  plcbit active;
+  plcbit _active;
+  plcbit error;
+  plcbit tip;
+  plcbit tip_disable_duration;
+  plcbit tip_disable_action;
 } SFCStepCType;
 
-typedef struct SFCStepCType3
-{   double t;
-    double _t;
-    double tp;
-    unsigned long inactive_actions;
-    unsigned long _inactive_actions;
-    unsigned long error_actions;
-    plcbit x;
-    plcbit _x;
-    plcbit x_activate;
-    plcbit force;
-    plcbit _force;
-    plcbit active;
-    plcbit _active;
-    plcbit error;
-    plcbit tip;
-    plcbit tip_disable_duration;
-    plcbit tip_disable_action;
+typedef struct SFCStepCType3 {
+  double t;
+  double _t;
+  double tp;
+  unsigned long inactive_actions;
+  unsigned long _inactive_actions;
+  unsigned long error_actions;
+  plcbit x;
+  plcbit _x;
+  plcbit x_activate;
+  plcbit force;
+  plcbit _force;
+  plcbit active;
+  plcbit _active;
+  plcbit error;
+  plcbit tip;
+  plcbit tip_disable_duration;
+  plcbit tip_disable_action;
 } SFCStepCType3;
 
-typedef struct SFCSimpleStepCType
-{   plctime t;
-    plctime _t;
-    plcbit x;
-    plcbit _x;
-    plcbit x_activate;
-    plcbit force;
-    plcbit _force;
-    plcbit active;
-    plcbit _active;
-    plcbit error;
-    plcbit tip;
-    plcbit tip_disable_duration;
-    plcbit tip_disable_action;
+typedef struct SFCSimpleStepCType {
+  plctime t;
+  plctime _t;
+  plcbit x;
+  plcbit _x;
+  plcbit x_activate;
+  plcbit force;
+  plcbit _force;
+  plcbit active;
+  plcbit _active;
+  plcbit error;
+  plcbit tip;
+  plcbit tip_disable_duration;
+  plcbit tip_disable_action;
 } SFCSimpleStepCType;
 
-typedef struct SFCSimpleStepCType3
-{   double t;
-    double _t;
-    double tp;
-    plcbit x;
-    plcbit _x;
-    plcbit x_activate;
-    plcbit force;
-    plcbit _force;
-    plcbit active;
-    plcbit _active;
-    plcbit error;
-    plcbit tip;
-    plcbit tip_disable_duration;
-    plcbit tip_disable_action;
+typedef struct SFCSimpleStepCType3 {
+  double t;
+  double _t;
+  double tp;
+  plcbit x;
+  plcbit _x;
+  plcbit x_activate;
+  plcbit force;
+  plcbit _force;
+  plcbit active;
+  plcbit _active;
+  plcbit error;
+  plcbit tip;
+  plcbit tip_disable_duration;
+  plcbit tip_disable_action;
 } SFCSimpleStepCType3;
 
-typedef struct SFCTransitionCType
-{   plcbit force;
-    plcbit _force;
-    plcbit active;
-    plcbit _active;
+typedef struct SFCTransitionCType {
+  plcbit force;
+  plcbit _force;
+  plcbit active;
+  plcbit _active;
 } SFCTransitionCType;
 
-typedef struct ArFBStateInternalType
-{   unsigned long ExecuteRef;
-    unsigned long BusyRef;
-    unsigned long DoneRef;
-    unsigned long ErrorRef;
-    unsigned long ActiveRef;
-    unsigned long StatusRef;
-    unsigned long FBCyclic;
-    unsigned long AsyfumaState;
-    unsigned long FBResetOut;
-    unsigned long Argument;
-    unsigned long State;
-    plcbit ExecutePrev;
+typedef struct ArFBStateInternalType {
+  unsigned long ExecuteRef;
+  unsigned long BusyRef;
+  unsigned long DoneRef;
+  unsigned long ErrorRef;
+  unsigned long ActiveRef;
+  unsigned long StatusRef;
+  unsigned long FBCyclic;
+  unsigned long AsyfumaState;
+  unsigned long FBResetOut;
+  unsigned long Argument;
+  unsigned long State;
+  plcbit ExecutePrev;
 } ArFBStateInternalType;
 
-typedef struct ArFBAsyFuMaInternalType
-{   unsigned short State;
-    signed long Result;
+typedef struct ArFBAsyFuMaInternalType {
+  unsigned short State;
+  signed long Result;
 } ArFBAsyFuMaInternalType;
 
-typedef struct r_trig
-{
-    /* VAR_INPUT (digital) */
-    plcbit CLK;
-    /* VAR_OUTPUT (digital) */
-    plcbit Q;
-    /* VAR (digital) */
-    plcbit M;
+typedef struct r_trig {
+  /* VAR_INPUT (digital) */
+  plcbit CLK;
+  /* VAR_OUTPUT (digital) */
+  plcbit Q;
+  /* VAR (digital) */
+  plcbit M;
 } r_trig_typ;
 
-typedef struct f_trig
-{
-    /* VAR_INPUT (digital) */
-    plcbit CLK;
-    /* VAR_OUTPUT (digital) */
-    plcbit Q;
-    /* VAR (digital) */
-    plcbit M;
+typedef struct f_trig {
+  /* VAR_INPUT (digital) */
+  plcbit CLK;
+  /* VAR_OUTPUT (digital) */
+  plcbit Q;
+  /* VAR (digital) */
+  plcbit M;
 } f_trig_typ;
 
-typedef struct rf_trig
-{
-    /* VAR_INPUT (digital) */
-    plcbit CLK;
-    /* VAR_OUTPUT (digital) */
-    plcbit Q;
-    /* VAR (digital) */
-    plcbit M;
+typedef struct rf_trig {
+  /* VAR_INPUT (digital) */
+  plcbit CLK;
+  /* VAR_OUTPUT (digital) */
+  plcbit Q;
+  /* VAR (digital) */
+  plcbit M;
 } rf_trig_typ;
 
-
-
 /* Prototyping of functions and function blocks */
-_BUR_PUBLIC void r_trig(struct r_trig* inst);
-_BUR_PUBLIC void f_trig(struct f_trig* inst);
-_BUR_PUBLIC void rf_trig(struct rf_trig* inst);
-_BUR_PUBLIC void SFCActionControl(struct SFCActionControl* inst);
-_BUR_PUBLIC void SFCAC2(struct SFCAC2* inst);
-_BUR_PUBLIC void SFCAC3(struct SFCAC3* inst);
+_BUR_PUBLIC void r_trig(struct r_trig *inst);
+_BUR_PUBLIC void f_trig(struct f_trig *inst);
+_BUR_PUBLIC void rf_trig(struct rf_trig *inst);
+_BUR_PUBLIC void SFCActionControl(struct SFCActionControl *inst);
+_BUR_PUBLIC void SFCAC2(struct SFCAC2 *inst);
+_BUR_PUBLIC void SFCAC3(struct SFCAC3 *inst);
 _BUR_PUBLIC plctime GetTime(void);
 _BUR_PUBLIC double RealTan(double x);
 _BUR_PUBLIC double RealAtan(double x);
@@ -481,9 +469,7 @@ _BUR_PUBLIC double RealSin(double x);
 _BUR_PUBLIC double RealCos(double x);
 _BUR_PUBLIC double RealSqrt(double x);
 
-
 #ifdef __cplusplus
 };
 #endif
 #endif /* _RUNTIME_ */
-
