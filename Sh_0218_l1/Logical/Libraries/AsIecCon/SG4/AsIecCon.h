@@ -4,7 +4,7 @@
 #ifndef _ASIECCON_
 #define _ASIECCON_
 #ifdef __cplusplus
-extern "C" 
+extern "C"
 {
 #endif
 

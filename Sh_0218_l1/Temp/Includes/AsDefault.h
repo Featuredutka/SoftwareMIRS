@@ -3,15 +3,15 @@
 #include <bur/plctypes.h>
 #include <bur/plc.h>
 
-#ifdef __cplusplus 
-extern "C" 
+#ifdef __cplusplus
+extern "C"
 {
 #endif
-	#include <operator.h>
-	#include <runtime.h>
-	#include <astime.h>
-	#include <AsIecCon.h>
-	#include <MotorCtrl.h>
+#include <operator.h>
+#include <runtime.h>
+#include <astime.h>
+#include <AsIecCon.h>
+#include <MotorCtrl.h>
 #ifdef __cplusplus
 };
 #endif
