@@ -1,4 +1,4 @@
-                                                                      
+
 TYPE
 	TIMEStructure : STRUCT			(*time structure*)
 		day	: SINT ;				(*day (1-31)*)

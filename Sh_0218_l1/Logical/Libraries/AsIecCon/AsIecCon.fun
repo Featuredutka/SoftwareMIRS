@@ -1,4 +1,4 @@
-                                                                       
+
 {REDUND_OK} {REDUND_UNREPLICABLE} FUNCTION swapDT : DATE_AND_TIME        (*swaps the byte order of a DATE_AND_TIME value*)
 	VAR_INPUT
 		IN	:DATE_AND_TIME;            (*input value*)

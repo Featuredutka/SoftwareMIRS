@@ -19,11 +19,8 @@ export AS_PLC := 4PP065_0571_P74
 export AS_TEMP_PLC := 4PP065_0571_P74
 export AS_USER_NAME := ash
 export AS_CONFIGURATION := Config1
-export AS_COMPANY_NAME := \ 
+export AS_COMPANY_NAME := \
 export AS_VERSION := 4.5.2.102
 
 
 default: \
-
-
-

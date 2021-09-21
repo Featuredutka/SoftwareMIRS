@@ -1,4 +1,4 @@
-                                                                      
+
 VAR CONSTANT
 	timEXSETTIME_NO_LOGENTRY	: USINT	:= 1;
 	timEXSETTIME_NO_OPTION		: USINT	:= 0;

@@ -10,9 +10,9 @@ set operation=del
 set returnValue=0
 
 for /l %%I in (1,1,%args%) do (
-	
+
 	call :setValue %%1
-	
+
 	if  "!returnValue!"=="" (
 		goto lastStep
 	) else (
@@ -66,4 +66,3 @@ goto :eof
 :myMove
 move /Y  %1 %2
 goto :eof
-  

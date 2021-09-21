@@ -1,4 +1,4 @@
-                                                                      
+
  (*Common Functionblock Status*)
 VAR CONSTANT
 	ERR_OK                : UINT := 0;			(*no error*)
@@ -10,11 +10,11 @@ VAR CONSTANT
 END_VAR
 
 (*IEC 61131-3 Datatypes*)
-VAR CONSTANT	
+VAR CONSTANT
 	IEC_DATATYPE_BOOL		: UINT := 1;		(*8 Bit containing a boolean value FALSE=0 or TRUE=1*)
 	IEC_DATATYPE_SINT		: UINT := 2;		(*8 Bit signed integer*)
-	IEC_DATATYPE_INT		: UINT := 3;		(*16 Bit signed integer*) 
-	IEC_DATATYPE_DINT		: UINT := 4;		(*32 Bit signed integer*) 
+	IEC_DATATYPE_INT		: UINT := 3;		(*16 Bit signed integer*)
+	IEC_DATATYPE_DINT		: UINT := 4;		(*32 Bit signed integer*)
 	IEC_DATATYPE_USINT		: UINT := 5;		(*8 Bit unsigned integer*)
 	IEC_DATATYPE_UINT		: UINT := 6;		(*16 Bit unsigned integer*)
 	IEC_DATATYPE_UDINT		: UINT := 7;		(*32 Bit unsigned integer*)

@@ -49,7 +49,7 @@
 	SIZE_OF_OS						-> size of all files in Os file-class summed up
 	SIZE_OF_USER					-> size of all files in User file-class summed up
 	SIZE_OF_USER_PARTITION			-> entered USER partition size
-	
+
 	variables for calculation:
 	SIZE_OF_AR						-> size of base AR (includes: arimg, base-sysconf, base-HWD, etc.)
 	SIZE_OF_SYSTEM 					-> required size for SYSTEM
@@ -70,7 +70,7 @@
 	SIZE_OF_USER_PARTITION_ENHANCED	-> size of USER partition with reserve plus unused space because of limitation
 	DIFF_SIZE_OF_SYSTEM_PARTITION_3	-> difference size from max to size plus reserve of SYSTEM partition.
 	SIZE_OF_RPSHD_PARTITION_ENHANCED-> size of RPSHD partition with reserve plus unused space because of limitation.
-	
+
 	partition values:
 	REQUIREDSIZEONSTORAGE			-> required size of a partition, used to compare with the actual size of a partition
 	CALCULATEDSIZEFORSTORAGE		-> partition size used for partitioning the storage device
@@ -134,4 +134,3 @@
 </VOLUMECALCULATIONRULES>
 
 </FILESYSTEMCONFIGURATION>
-

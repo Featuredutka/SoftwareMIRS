@@ -1,4 +1,4 @@
-                                                                      
+
 {REDUND_OK} FUNCTION_BLOCK r_trig 			(*for internal use only - do not use this function in user programs*)
 	VAR_INPUT
 		CLK	:BOOL;
@@ -207,38 +207,38 @@ END_FUNCTION
 	VAR_INPUT
 		x	:LREAL;
 	END_VAR
-END_FUNCTION 
+END_FUNCTION
 {REDUND_OK} FUNCTION RealLog : LREAL
 	VAR_INPUT
 		x	:LREAL;
 	END_VAR
-END_FUNCTION 
+END_FUNCTION
 {REDUND_OK} FUNCTION RealExpt : LREAL
 	VAR_INPUT
 		x	:LREAL;
 		y	:LREAL;
 	END_VAR
-END_FUNCTION 
+END_FUNCTION
 {REDUND_OK} FUNCTION RealAbs : LREAL
 	VAR_INPUT
 		x	:LREAL;
 	END_VAR
-END_FUNCTION 
+END_FUNCTION
 {REDUND_OK} FUNCTION RealSin : LREAL
 	VAR_INPUT
 		x	:LREAL;
 	END_VAR
-END_FUNCTION 
+END_FUNCTION
 {REDUND_OK} FUNCTION RealCos : LREAL
 	VAR_INPUT
 		x	:LREAL;
 	END_VAR
-END_FUNCTION 
+END_FUNCTION
 {REDUND_OK} FUNCTION RealSqrt : LREAL
 	VAR_INPUT
 		x	:LREAL;
 	END_VAR
-END_FUNCTION 
+END_FUNCTION
 {REDUND_OK} FUNCTION_BLOCK SFCAC3				(*for internal use only - do not use this function in user programs*)
 	VAR_INPUT
 		N		: {REDUND_UNREPLICABLE} BOOL;

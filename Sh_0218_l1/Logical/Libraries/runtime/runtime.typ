@@ -147,7 +147,7 @@ TYPE
 		State			: UDINT;
 		ExecutePrev		: BOOL;
 	END_STRUCT;
-	
+
 	ArFBAsyFuMaInternalType : STRUCT		(*asynchronous function manager internal context*)
 		State			: UINT;
 		Result			: DINT;

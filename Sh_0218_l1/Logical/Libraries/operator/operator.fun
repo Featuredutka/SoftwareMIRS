@@ -1,4 +1,4 @@
-                                                                      
+
 {REDUND_OK} FUNCTION SIZEOF : UDINT 		(*determines the size of a variable in bytes*)
 	VAR_INPUT
 		in	:ANY;				(*input value*)
@@ -105,7 +105,7 @@ END_FUNCTION
 		MN	:ANY;				(*minimum value*)
 		IN	:ANY;				(*input value*)
 		MX	:ANY;				(*maximum value*)
-	END_VAR		
+	END_VAR
 END_FUNCTION
 {REDUND_OK} FUNCTION SEL : ANY 				(*selects one value from two values*)
 	VAR_INPUT
